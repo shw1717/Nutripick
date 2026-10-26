@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>후기 작성</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="../JavaScript/auth.js"></script>
+    <script defer src="../JavaScript/common.js"></script>
+    <script defer src="../JavaScript/write-review.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <h1 class="auth-title">후기 작성</h1>
+      <div class="form-box auth-form-box">
+        <label for="productName">영양제 이름</label>
+        <input type="text" id="productName" placeholder="예: 비타민 D" maxlength="40" />
+        <label for="rating">별점</label>
+        <select id="rating">
+          <option value="5">★★★★★</option>
+          <option value="4">★★★★</option>
+          <option value="3">★★★</option>
+          <option value="2">★★</option>
+          <option value="1">★</option>
+        </select>
+        <label for="content">후기 내용</label>
+        <textarea id="content" placeholder="후기를 입력하세요" maxlength="350"></textarea>
+        <p id="reviewError" class="auth-error"></p>
+        <button class="btn auth-submit-btn" onclick="submitReview()">등록하기</button>
+        <p class="auth-switch">
+          <a href="board.html" class="auth-switch-link">← 목록으로 돌아가기</a>
+        </p>
+      </div>
+    </main>
+    <div id="footer"></div>
+  </body>
+</html>

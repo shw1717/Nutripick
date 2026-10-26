@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>장바구니</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/cart.css" />
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="../JavaScript/data.js"></script>
+    <script defer src="../JavaScript/auth.js"></script>
+    <script defer src="../JavaScript/common.js"></script>
+    <script defer src="../JavaScript/cart.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div id="checkoutModal" class="modal-overlay" onclick="closeModal(event)">
+      <div class="modal-box">
+        <h3 class="modal-title">결제 확인</h3>
+        <ul id="checkoutItemList" class="checkout-item-list"></ul>
+        <div class="modal-actions">
+          <button class="btn secondary" onclick="closeCheckoutModal()">취소</button>
+          <button class="btn" onclick="confirmCheckout()">확인</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="successModal" class="modal-overlay" onclick="closeSuccessModal()">
+      <div class="modal-box">
+        <p class="modal-success-icon">✓</p>
+        <h3 class="modal-title">결제가 완료되었습니다!</h3>
+        <div class="modal-actions">
+          <button class="btn" onclick="closeSuccessModal()">확인</button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <h1>장바구니</h1>
+      <div id="cartList" class="grid"></div>
+      <div class="cart-summary">
+        <span id="totalPrice"></span>
+        <div class="cart-summary-actions">
+          <button class="btn secondary" onclick="clearCart()">장바구니 비우기</button>
+          <button class="btn" onclick="checkout()">결제하기</button>
+        </div>
+      </div>
+    </main>
+    <div id="footer"></div>
+  </body>
+</html>

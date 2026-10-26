@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>추천 설문</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/survey.css" />
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="../JavaScript/data.js"></script>
+    <script defer src="../JavaScript/auth.js"></script>
+    <script defer src="../JavaScript/common.js"></script>
+    <script defer src="../JavaScript/survey.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <h1>생활 패턴·식습관 기반 추천 설문</h1>
+      <p class="lead">
+        건강 고민을 직접 고르는 대신 사용자의 생활 패턴과 식습관을 선택하면
+        NutriPick이 고민 카테고리를 자동 분류합니다.
+      </p>
+      <div class="form-box">
+        <h2>1. 생활 패턴</h2>
+        <div id="lifestyleChecks" class="check-grid"></div>
+
+        <h2>2. 식습관</h2>
+        <div id="dietChecks" class="check-grid"></div>
+
+        <button class="btn" id="submitBtn">나의 추천 결과 보기</button>
+      </div>
+    </main>
+    <div id="footer"></div>
+  </body>
+</html>

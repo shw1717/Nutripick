@@ -1,0 +1,16 @@
+.result-box {
+  background: #fff;
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.selected-tags {
+  margin-top: 12px;
+}
+
+.score {
+  color: #4f46e5 !important;
+  font-weight: bold;
+  margin: 0 0 8px;
+}

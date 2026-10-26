@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="../JavaScript/data.js"></script>
+    <script defer src="../JavaScript/auth.js"></script>
+    <script defer src="../JavaScript/common.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <h1 class="auth-title">로그인</h1>
+      <div class="form-box auth-form-box">
+        <label for="loginUsername">아이디</label>
+        <input type="text" id="loginUsername" placeholder="아이디를 입력하세요" />
+        <label for="loginPassword">비밀번호</label>
+        <input type="password" id="loginPassword" placeholder="비밀번호를 입력하세요" />
+        <p id="loginError" class="auth-error"></p>
+        <button class="btn auth-submit-btn" onclick="handleLogin()">로그인</button>
+        <p class="auth-switch">
+          계정이 없으신가요? <a href="signup.html" class="auth-switch-link">회원가입</a>
+        </p>
+      </div>
+    </main>
+    <div id="footer"></div>
+    <script defer src="../JavaScript/login.js"></script>
+  </body>
+</html>
